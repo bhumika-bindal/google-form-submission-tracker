@@ -1,0 +1,135 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7fb; /* Light background color */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: lightpink;
+}
+
+/* Container to center the content */
+.container {
+    background-color: #fff;
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    background-color: lightgreen;
+    border: 10px solid blueviolet;
+}
+
+/* Title and Heading */
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: black;
+    font-weight: bold;
+}
+
+/* File Upload Styles */
+input[type="file"] {
+    margin: 20px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    width: 80%;
+    font-size: 14px;
+}
+
+input[type="file"]:hover {
+    border-color: #4a90e2;
+}
+
+/* Button Style */
+#process {
+    background-color: violet;
+    color: black;
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 80%;
+    margin-top: 20px;
+}
+
+#process:hover {
+    background-color: mediumvioletred;
+    transform: scale(1.05);
+}
+
+/* Missing Students List */
+#missingStudents {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 30px;
+    font-size: 18px;
+    color: #e74c3c;
+}
+
+#missingStudents li {
+    padding: 8px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+#missingStudents li:last-child {
+    border-bottom: none;
+}
+
+#missingStudents li a {
+    color: #e74c3c;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#missingStudents li a:hover {
+    color: #c0392b;
+}
+
+/* Success Message */
+#missingStudents li.no-missing {
+    color: #2ecc71;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* Loading Spinner */
+.spinner {
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #4a90e2;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 2s linear infinite;
+    margin: 20px auto;
+}
+
+/* Spinner Animation */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Media Queries */
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    #process {
+        width: 100%;
+    }
+}

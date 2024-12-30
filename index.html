@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Form Submission Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Google Form Submission Tracker</h1>
+        <p>Upload the class list and the form submission list to find out who hasn't submitted the form.</p>
+        <div class="upload-section">
+            <label for="classList">Class List (CSV):</label>
+            <input type="file" id="classList" accept=".csv">
+            <br>
+            <label for="submittedList">Submitted List (CSV):</label>
+            <input type="file" id="submittedList" accept=".csv">
+        </div>
+        <button id="process">Find Missing Students</button>
+        <h2>Missing Students</h2>
+        <ul id="missingStudents"></ul>
+    </div>
+    <script src="script1.js"></script>
+</body>
+</html>
